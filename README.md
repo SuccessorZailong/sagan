@@ -28,4 +28,4 @@ Sagan is released under the [BSD-3 license](LICENSE.md).
 [add an issue]: https://github.com/spring-io/sagan/issues
 
 ## p.s 
-fix some bugs when deploy 
+1. fix some bugs when deploy 
