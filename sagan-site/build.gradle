@@ -93,8 +93,7 @@ clean.doFirst {
 }
 
 asciidoctor {
-	attributes \
-      'snippets': file('build/snippets')
+	attributes 'snippets': file('build/snippets')
 }
 
 jar {

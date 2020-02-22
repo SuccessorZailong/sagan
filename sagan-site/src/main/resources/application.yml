@@ -25,13 +25,14 @@ spring:
 
 security:
   basic:
-    enabled: false
+    enabled: true
   require_ssl: false
-  ignored: 
+  ignored:
     - /lib/**
     - /css/**
     - /font-custom/**
     - /img/**
+    - /images/**
     - /500
     - /404
   headers:
@@ -91,7 +92,7 @@ spring:
   resources:
     add-mappings: false
 security:
-  require_ssl: true
+  require_ssl: false
 server:
   compression:
     enabled: true
@@ -104,11 +105,11 @@ spring:
   profiles: standalone
   resources:
     static_locations:
-      - file:${client.dir}/build/dist/
+      - file:${client.dir}/build/dist
   devtools:
     restart:
       additional_paths:
-        - ../sagan-client/build/dist/
+        - sagan-client/build/dist/
       additional_exclude: "**/*.js,**/*.css"
 disqus_shortname: ${DISQUS_SHORTNAME:spring-io-localhost}
 flyway:

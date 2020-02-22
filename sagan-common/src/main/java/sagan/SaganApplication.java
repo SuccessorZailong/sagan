@@ -52,7 +52,7 @@ public class SaganApplication extends SpringApplication {
             logger.info("The default 'standalone' profile is active because no other profiles have been specified.");
             environment.addActiveProfile(STANDALONE);
             Map<String, Object> map = new HashMap<>();
-            map.put("client.dir", new File("../sagan-client").getAbsolutePath());
+            map.put("client.dir", new File("sagan-client").getAbsolutePath());
             environment.getPropertySources().addLast(new MapPropertySource("clientDir", map));
         }
 

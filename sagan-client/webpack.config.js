@@ -73,6 +73,7 @@ module.exports = {
     ],
     module: {
         rules: [
+
             {
                 test: /\.css$/,
                 use: [
@@ -104,6 +105,10 @@ module.exports = {
                 options: {
                     name: '[path][name].[ext]',
                 },
+            },
+            {
+                test: /\.(ttf|eot|woff|woff2|svg|png|jpg|gif|ico)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                loader: 'file-loader'
             }
         ]
     },
